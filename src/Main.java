@@ -69,19 +69,24 @@ public class Main {
         System.out.println("Имеем изначальный массив:");
         System.out.println(Arrays.toString(arrInt));
         System.out.println("Массив после преобразования переменных:");
-        if (arrInt[0]%2!=0) {
-            arrInt[0]=arrInt[0]+1;
-        } else {
-            arrInt[0] = arrInt[0];
+        for (int a=0; a< arrInt.length; a++) {
+            if (arrInt[a]%2!=0) {
+                arrInt[a] = arrInt [a] + 1;
+            }
         }
-        if (arrInt[1]%2!=0) {
-            arrInt[1]=arrInt[1]+1;
-        } else {
-            arrInt[1]=arrInt[1];
-            }
-        if (arrInt[2]%2!=0) {
-            arrInt[2] = arrInt[2] + 1;
-            }
+       // if (arrInt[0]%2!=0) {
+       //     arrInt[0]=arrInt[0]+1;
+       // } else {
+       //     arrInt[0] = arrInt[0];
+       // }
+       //if (arrInt[1]%2!=0) {
+       //     arrInt[1]=arrInt[1]+1;
+       // } else {
+       //     arrInt[1]=arrInt[1];
+       //     }
+       // if (arrInt[2]%2!=0) {
+       //     arrInt[2] = arrInt[2] + 1;
+       //     }
         
         System.out.println(Arrays.toString(arrInt));
     }
